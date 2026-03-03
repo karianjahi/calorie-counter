@@ -7,7 +7,7 @@ const output = document.getElementById("output");
 let isError = false;
 const cleanInputString = (str) => {
     let regex = /[+-\s]/g;
-    return regex.test(str);
+    return str.replace(regex, "");
 
 };
 
