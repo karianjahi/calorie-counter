@@ -7,8 +7,10 @@ const output = document.getElementById("output");
 let isError = false;
 const cleanInputString = (str) => {
     let regex = /[+-\s]/g;
+    console.log("original string: ", str);
     return str.replace(regex, "");
 
 };
 
-console.log(cleanInputString("+24"));
+console.log(cleanInputString("+-99"));
+
