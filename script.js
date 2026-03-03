@@ -5,12 +5,12 @@ const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
 let isError = false;
+
 const cleanInputString = (str) => {
     let regex = /[+-\s]/g;
-    console.log("original string: ", str);
     return str.replace(regex, "");
-
 };
 
-console.log(cleanInputString("+-99"));
+const isInvalidInput = (str) => {};
+
 
