@@ -17,5 +17,7 @@ const isInvalidInput = (str) => {
 };
 
 const addEntry = () => {
-    
+    const targetId = "#" + entryDropdown.value
+    console.log(targetId);
 };
+console.log(addEntry());
