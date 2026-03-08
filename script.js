@@ -28,3 +28,5 @@ const addEntry = () => {
 };
 
 addEntryButton.addEventListener("click", addEntry);
+
+const getCaloriesFromInputs = (list) => {};
