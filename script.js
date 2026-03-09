@@ -29,4 +29,9 @@ const addEntry = () => {
 
 addEntryButton.addEventListener("click", addEntry);
 
-const getCaloriesFromInputs = (list) => {};
+function getCaloriesFromInputs(list) {
+    let calories = 0;
+    for (const item of list) {
+        
+    }
+};
