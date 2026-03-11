@@ -29,6 +29,9 @@ const addEntry = () => {
 
 addEntryButton.addEventListener("click", addEntry);
 
+
+
+
 function getCaloriesFromInputs(list) {
     let calories = 0;
     for (const item of list) {
@@ -44,6 +47,7 @@ function getCaloriesFromInputs(list) {
     return calories;
 };
 
+
 function calculateCalories(e) {
     e.preventDefault();
     isError = false;
@@ -56,5 +60,9 @@ function calculateCalories(e) {
     const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
+    if (isError) return null;
 };
+
+
 
