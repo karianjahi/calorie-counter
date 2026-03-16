@@ -64,6 +64,7 @@ function calculateCalories(e) {
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
     if (isError) return null;
     const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories
+    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
 };
 
 
